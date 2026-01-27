@@ -294,6 +294,8 @@ pre>code {
     margin-bottom: 15px
 }
 
+
+
 .contact-list,
 .social-media-list {
     list-style: none;
@@ -704,7 +706,8 @@ pre>code {
 
 .shallow-bg {
     /* background-image: url("images/background/background1.JPG"); */
-    background-image: url("images/background/background_hkust_2.jpg");
+    /* background-image: url("images/background/background_hkust_2.jpg"); */
+    background-image: url("images/Yalu_River.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center
@@ -1013,6 +1016,10 @@ hr.soft {
     background-color: #000
 }
 
+.orcid span {
+    background-color: #A6CE39
+}
+
 .icon-button i {
     background: none;
     color: white;
@@ -1043,6 +1050,21 @@ hr.soft {
 
 .icon-button .icon-linkedin {
     color: #0077B5
+}
+
+/* 1️⃣ ORCID 默认图标颜色 */
+.icon-button.orcid i.ai-orcid {
+    color: #A6CE39;
+}
+
+/* 2️⃣ ORCID hover：图标反色成白 */
+.icon-button.orcid:hover i.ai-orcid {
+    color: white;
+}
+
+/* 3️⃣ ORCID hover：背景变绿 */
+.icon-button.orcid span {
+    background-color: #A6CE39;
 }
 
 
@@ -2052,3 +2074,26 @@ div.paginate-container li:nth-last-child(2) a:after {
     height: 16px;
     margin-right: 4px;
   }
+  .thesis-text {
+    display: block;
+    margin-left: 4.5em;
+    margin-top: 0.2em;
+
+    text-align: justify;      /* 两端对齐 */
+    hyphens: auto;            /* ✅ 自动断词 */
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+
+    line-height: 1.45;
+}
+
+
+
+.thesis-text a {
+    color: inherit;              /* 继承文字颜色 */
+    text-decoration: none;
+}
+
+.thesis-text a:hover {
+    text-decoration: underline;
+}
