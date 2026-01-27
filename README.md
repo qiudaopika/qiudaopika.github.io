@@ -1,2 +1,2 @@
 # Homepage
-This is my personal website: cen-jun.com. Go live on August 29, 2021.
+The style of this website is borrowed from: cen-jun.com. Last updated: Jan, 2026.
