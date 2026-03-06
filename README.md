@@ -1,2 +1,2 @@
 # Homepage
-The style of this website is borrowed from: cen-jun.com. Last updated: Jan, 2026.
+The style of this website is borrowed from: https://yuexin.netlify.app/. Last updated: Mar, 2026.
