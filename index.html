@@ -35,15 +35,8 @@
 
   <link rel="shortcut icon" href="images/pika.png">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/academicons.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-
-  <script src="js/jquery-2.1.3.min.js"> </script>
 
   <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -63,10 +56,10 @@
   </script>
 
   <style>
-    /* 为所有列表项设置样式 */
+    /* Shared style for dated list items */
     li.indented {
         position: relative;
-        padding-left: 90px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
+        padding-left: 90px; /* Adjust this value to align with date labels */
     }
 
     li.indented::before {
@@ -109,6 +102,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <a class="page-link" href="#codebase"><b>GitHub</b></a> -->
     <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
     <a class="page-link" href="#academicservices"><b>Academic Services </b></a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true"></span>
+      <span class="theme-label">Light Mode</span>
+    </button>
     <!--<a class="page-link" href="#otherprojects">Projects</a>-->
     <!-- Button for Posts -->
   </div>
@@ -119,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="profile-cover" class="cover shallow-bg img-responsive"> 
     <div id="profile-namecard" class="profile-wrapper wrapper-light">
       <div id="my-pic" class="profile-col profile-col-1">
-        <img id="profile-avatar" src="images/pika.png" alt="Me" class="circle-img border-dark"-/>
+        <img id="profile-avatar" src="images/pika.png" alt="Me" class="circle-img border-dark" />
       </div>
       <div id="my-contact" class="profile-col profile-col-2">
         <div id="my-name" class="text-grey-dark">
@@ -332,7 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- handle -->
         <path d="M6 14.6l1.2 4c.2.6.7 1 1.3 1h1.2c.9 0 1.5-.9 1.2-1.7l-1.2-3.3H6z"
-              fill="#3b82f6" opacity="0. opacity="0.9"/>
+              fill="#3b82f6" opacity="0.9"/>
 
         <!-- waves -->
         <path d="M19 8.4c1 .9 1.6 2.2 1.6 3.6S20 14.7 19 15.6"
@@ -347,7 +344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </h1>
 
   <div class="news-feed">
-    <!-- ✅ 最新放最上面：内容你随时改 -->
+    <!-- Latest update first -->
     <div class="news-item">
       <div class="news-meta">
         <span class="news-date">Feb 2026</span>
@@ -357,7 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="news-title">CVPR 2026 paper accepted.</div>
         <div class="news-detail">
           Congratulations for Dr. Gao and
-<a class="link-paper-pill" href="https://scholar.google.com/citations?user=ojUZAN0AAAAJ&hl=zh-CN"
+<a class="news-index-link" href="https://scholar.google.com/citations?user=ojUZAN0AAAAJ&hl=zh-CN"
    target="_blank" rel="noopener">Dr. Zheng</a> !
         </div>
       </div>
@@ -371,12 +368,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="news-content">
         <div class="news-title">Stanford EE PhD offer received.</div>
         <div class="news-detail">
-          Starting from Fall 2026. Excited to join the <a class="link-research-pill" href="https://ee.stanford.edu/" target="_blank" rel="noopener">Stanford EE family</a> !
+          Starting from Fall 2026. Excited to join the <a class="news-index-link" href="https://ee.stanford.edu/" target="_blank" rel="noopener">Stanford EE family</a> !
         </div>
       </div>
     </div>
 
-    <!-- 可选：未来行程/里程碑也可以算 news -->
+    <!-- Optional: future travel or milestones can also be listed here -->
     <!-- <div class="news-item">
       <div class="news-meta">
         <span class="news-date">Apr 2026</span>
@@ -385,7 +382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="news-content">
         <div class="news-title">Heading to Rio de Janeiro for ICLR 2026.</div>
         <div class="news-detail">
-          Conference at Riocentro Convention and Event Center (Apr 23–27).
+          Conference at Riocentro Convention and Event Center (Apr 23-27).
         </div>
       </div>
     </div> -->
@@ -422,7 +419,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="publish">
               <span class="place">ISIT 2025</span>
-              <span class="place"></span>
             </div>
             <div class="tags">
               [<a class="tag" href="https://ieeexplore.ieee.org/document/11195302" target="_blank">Paper</a>]
@@ -433,11 +429,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="pub" data-selected="true">
           <div class="pub-left">
-            <img class="intro-img frame" src="images/小猫说想看图片拿猫条来换.jpg">
+            <img class="intro-img frame" src="images/pub-cover-swap.jpg" alt="Publication cover">
           </div>
           <div class="pub-right">
             <div class="title">
-              Differential Properties of Informatio in Jump-diffusion Channels
+              Differential Properties of Information in Jump-diffusion Channels
             </div>
             <div class="authors">
               <font style="font-size: 11pt;">
@@ -446,7 +442,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="publish">
               <span class="place">ISIT 2025</span>
-              <span class="place"></span>
             </div>
             <div class="tags">
               [<a class="tag" href="https://ieeexplore.ieee.org/document/11195365" target="_blank">Paper</a>]
@@ -470,7 +465,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="publish">
               <span class="place">TPAMI 2025</span>
-              <span class="place"></span>
             </div>
             <div class="tags">
               [<a class="tag" href="https://ieeexplore.ieee.org/document/11143960" target="_blank">Paper</a>]
@@ -481,7 +475,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="pub" data-selected="true">
           <div class="pub-left">
-            <img class="intro-img frame" src="images/图片和小猫一起加载中.jpg">
+            <img class="intro-img frame" src="images/pub-cover-loading.jpg" alt="Publication cover">
           </div>
           <div class="pub-right">
             <div class="title">
@@ -494,7 +488,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="publish">
               <span class="place">Arxiv 2025</span>
-              <span class="place"></span>
             </div>
             <div class="tags">
               [<a class="tag" href="https://arxiv.org/abs/2501.09362" target="_blank">Paper</a>]
@@ -505,7 +498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="pub" data-selected="true">
           <div class="pub-left">
-            <img class="intro-img frame" src="images/图片已被小猫咬坏.jpg">
+            <img class="intro-img frame" src="images/pub-cover-bitten.jpg" alt="Publication cover">
           </div>
           <div class="pub-right">
             <div class="title">
@@ -519,7 +512,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="publish">
               <span class="place">IEEE TIT Under Review</span>
-              <span class="place"></span>
             </div>
             <div class="tags">
               [<a class="tag" href="" target="_blank">Paper</a>]
@@ -530,7 +522,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="pub" data-selected="true">
           <div class="pub-left">
-            <img class="intro-img frame" src="images/图片已被小猫绑架.jpg">
+            <img class="intro-img frame" src="images/pub-cover-kidnapped.jpg" alt="Publication cover">
           </div>
           <div class="pub-right">
             <div class="title">
@@ -543,7 +535,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="publish">
               <span class="place">ISIT 2026 Under Review</span>
-              <span class="place"></span>
             </div>
             <div class="tags">
               [<a class="tag" href="https://arxiv.org/abs/2601.07246" target="_blank">Paper</a>]
@@ -558,7 +549,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="pub-right">
             <div class="title">
-              C<sup>2</sup>FG: Control ClassiﬁerFree
+              C<sup>2</sup>FG: Control Classifier-Free
               Guidance via Score Discrepancy Analysis.
             </div>
             <div class="authors">
@@ -569,7 +560,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="publish">
               <span class="place">CVPR 2026</span>
-              <span class="place"></span>
             </div>
             <div class="tags">
               [<a class="tag" href="" target="_blank">Paper</a>]
@@ -627,12 +617,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
             if (!res.ok) throw new Error("GitHub API error");
             const data = await res.json();
-            document.getElementById(starId).innerText = data.stargazers_count ?? "–";
-            document.getElementById(forkId).innerText = data.forks_count ?? "–";
+            document.getElementById(starId).innerText = data.stargazers_count ?? "-";
+            document.getElementById(forkId).innerText = data.forks_count ?? "-";
           } catch (e) {
             console.error(`Failed to load stats for ${owner}/${repo}`, e);
-            document.getElementById(starId).innerText = "–";
-            document.getElementById(forkId).innerText = "–";
+            document.getElementById(starId).innerText = "-";
+            document.getElementById(forkId).innerText = "-";
           }
         }
       }
@@ -692,7 +682,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li>Conducted research on differential properties of information along Fokker-Planck and jump-diffusion channels, including proving the convexity of mutual information along the Fokker-Planck flow under certain conditions. </li>
                     <li>Studied strong data processing inequalities (SDPIs) for generalized Fisher-information-type functionals along Fokker-Planck flows, including the heat flow, the Ornstein-Uhlenbeck flow, and Langevin dynamics. </li>
                     <li>Developed new existence theorem for rate-distortion problems for general sources using the concentration-compactness principle in optimal transport theory. </li>
-                    <li>Connected the rate-distortion function with the Schrödinger bridge problem, and established necessary conditions for optimality within the framework of optimal weak transport.</li>
+                    <li>Connected the rate-distortion function with the Schrodinger bridge problem, and established necessary conditions for optimality within the framework of optimal weak transport.</li>
                 </ul>
                 
               </div>
@@ -818,44 +808,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
-
-    <style>
-      .reviewer-section {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 8px;
-      }
-
-      .reviewer-column {
-        flex: 1 1 50%;
-        box-sizing: border-box;
-        padding-right: 20px;
-        font-size: 0.85em; /* 字体略微变小 */
-        line-height: 1.6;
-        position: relative;
-        padding-left: 1em;
-        margin-bottom: 4px;
-      }
-
-      .reviewer-column::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: #555;
-      }
-
-      @media (max-width: 600px) {
-        .reviewer-column {
-          flex: 1 1 100%;
-        }
-      }
-
-      .reviewer-title {
-        margin-top: 12px;
-        font-weight: bold;
-      }
-    </style>
-
     <div id="academicservices" class="bio">
       <!-- <div class="bio-body" style="overflow:hidden;"> -->
         <h1 class="md-heading text-left">
@@ -863,18 +815,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Academic Services
         </h1>  
       <div class="bio-body" style="overflow:hidden;">
-        <div class="reviewer-title">Conference Reviewer:</div>
-        <div class="reviewer-section">
-          <div class="reviewer-column">International Symposium on Information Theory (ISIT)</div>
-          <div class="reviewer-column">Conference on Neural Information Processing Systems (NeurIPS)</div>
-          <div class="reviewer-column">International Conference on Learning Representations (ICLR)</div>
-          <div class="reviewer-column">International Conference on Machine Learning (ICML)</div>
+        <div class="service-block">
+          <div class="reviewer-title">Conference Reviewer</div>
+          <div class="reviewer-section">
+            <div class="reviewer-column">International Symposium on Information Theory (ISIT)</div>
+            <div class="reviewer-column">Conference on Neural Information Processing Systems (NeurIPS)</div>
+            <div class="reviewer-column">International Conference on Learning Representations (ICLR)</div>
+            <div class="reviewer-column">International Conference on Machine Learning (ICML)</div>
+          </div>
         </div>
 
-        <div class="reviewer-title">Journal Reviewer:</div>
-        <div class="reviewer-section">
-          <div class="reviewer-column">IEEE Transactions on Information Theory (TIT)</div>
-          <div class="reviewer-column">IEEE Transactions on Communication (TCOM)</div>
+        <div class="service-block">
+          <div class="reviewer-title">Journal Reviewer</div>
+          <div class="reviewer-section">
+            <div class="reviewer-column">IEEE Transactions on Information Theory (TIT)</div>
+            <div class="reviewer-column">IEEE Transactions on Communication (TCOM)</div>
+          </div>
         </div>
       </div>
       <!-- </div> -->
@@ -885,13 +841,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- =======================
      End main content
      ======================= -->
-
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div style="max-width: 400px; width: 100%;">
-    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=K9NLvpbM7GH1cTCvhvVlo4LW5p-d2mRZYw6UhrAFw0g&cl=ffffff&w=a"></script>
-  </div>
-</div>
 
 
 <footer class="site-footer">
@@ -950,23 +899,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <script type="text/javascript">
-jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-    
-        }
-    });
-    jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
-});
+(function() {
+  var button = document.querySelector('.back-to-top');
+  if (!button) return;
+
+  var offset = 220;
+
+  function updateButtonState() {
+    button.classList.toggle('is-visible', window.scrollY > offset);
+  }
+
+  window.addEventListener('scroll', updateButtonState, { passive: true });
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  updateButtonState();
+})();
+</script>
+<script type="text/javascript">
+(function() {
+  var root = document.documentElement;
+  var toggle = document.getElementById('theme-toggle');
+  var label = toggle ? toggle.querySelector('.theme-label') : null;
+  var storageKey = 'site-theme';
+  if (!toggle) return;
+
+  function applyTheme(theme) {
+    var isDark = theme === 'dark';
+    root.setAttribute('data-theme', theme);
+    toggle.setAttribute('data-mode', theme);
+    toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+    if (label) {
+      label.textContent = isDark ? 'Dark Mode' : 'Light Mode';
+    }
+  }
+
+  var saved = null;
+  try {
+    saved = window.localStorage.getItem(storageKey);
+  } catch (e) {
+    saved = null;
+  }
+  var initialTheme = saved === 'dark' || saved === 'light' ? saved : 'light';
+  applyTheme(initialTheme);
+
+  toggle.addEventListener('click', function() {
+    var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    var next = current === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    try {
+      window.localStorage.setItem(storageKey, next);
+    } catch (e) {
+      // ignore storage failures
+    }
+  });
+})();
 </script>
   </body>
 
@@ -984,3 +973,5 @@ jQuery(document).ready(function() {
 
 <!--<script src="custom-pub.js"></script>-->
 </html>
+
+
