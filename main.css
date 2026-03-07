@@ -3200,3 +3200,82 @@ html[data-theme="dark"] .theme-toggle .theme-icon::after{
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 760px){
+  .site-header .wrapper{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .site-nav{
+    position: static;
+    top: auto;
+    right: auto;
+    width: 100%;
+    display: block;
+    line-height: 1.35;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .site-nav .menu-icon{
+    display: none;
+  }
+
+  .site-nav .trigger{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px 14px;
+  }
+
+  .site-nav .page-link{
+    display: inline-flex;
+    margin-left: 0 !important;
+    padding: 0;
+    line-height: 1.35;
+    font-size: 0.95rem;
+  }
+
+  .theme-toggle{
+    margin: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 680px){
+  #publications > .md-heading{
+    display: block;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  #publications > .md-heading > i{
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  #publications .custom-button{
+    display: inline;
+    font-size: 0.78em;
+    white-space: normal;
+  }
+
+  #publications .pub{
+    padding: 12px;
+  }
+
+  #publications .pub-left > .intro-img{
+    width: min(280px, 100%);
+    height: auto;
+    aspect-ratio: 280 / 130;
+  }
+
+  #publications .pub-right{
+    row-gap: 6px;
+  }
+}
