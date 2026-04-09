@@ -2583,6 +2583,9 @@ div.paginate-container li:nth-last-child(2) a:after {
 
   --ui-red: #8f2b22;
   --ui-red-hover: #6f1f18;
+  --ui-highlight-accent: #c53d34;
+  --ui-highlight-accent-soft: rgba(197, 61, 52, 0.12);
+  --ui-highlight-accent-border: rgba(197, 61, 52, 0.24);
 
   --ui-tag-paper-bg: rgba(79, 70, 229, 0.20);
   --ui-tag-paper-border: rgba(79, 70, 229, 0.34);
@@ -2618,6 +2621,9 @@ html[data-theme="dark"]{
 
   --ui-red: #f2b8b2;
   --ui-red-hover: #ffd1cb;
+  --ui-highlight-accent: #ff8f84;
+  --ui-highlight-accent-soft: rgba(255, 143, 132, 0.16);
+  --ui-highlight-accent-border: rgba(255, 143, 132, 0.34);
 
   --ui-tag-paper-bg: rgba(99, 102, 241, 0.28);
   --ui-tag-paper-border: rgba(165, 180, 252, 0.46);
@@ -2930,6 +2936,20 @@ html[data-theme="dark"] .theme-toggle .theme-icon::after{
   border: none;
   background: none;
   display: inline;
+}
+
+#publications .pub-right > .publish > .place .venue-highlight{
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0.08em 0.52em;
+  border-radius: 999px;
+  color: var(--ui-highlight-accent);
+  background: var(--ui-highlight-accent-soft);
+  border: 1px solid var(--ui-highlight-accent-border);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  vertical-align: middle;
 }
 
 #publications .pub-right > .publish > .place:empty{
